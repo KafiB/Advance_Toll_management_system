@@ -85,91 +85,98 @@ A full-stack, enterprise-grade **Toll Management System** built for modern highw
 
 ---
 
-## 📁 Project Structure
+# Toll Management System
 
+## Project Structure
+
+```text
 toll-management-system/
-
+│
 ├── backend/
-
 │   ├── server.js
-
+│   │
 │   ├── src/
-
 │   │   ├── app.js
-
+│   │   │
 │   │   ├── config/
-
 │   │   │   └── db.js
-
+│   │   │
 │   │   ├── controllers/
-
 │   │   │   ├── authController.js
-
 │   │   │   ├── vehicleController.js
-
 │   │   │   ├── accountController.js
-
 │   │   │   ├── boothController.js
-
 │   │   │   ├── transactionController.js
-
 │   │   │   ├── blacklistController.js
-
 │   │   │   ├── reportController.js
-
 │   │   │   └── messageController.js
-
+│   │   │
 │   │   ├── models/
-
 │   │   ├── routes/
-
 │   │   ├── middleware/
-
+│   │   │
 │   │   ├── services/
-
 │   │   │   ├── emailService.js
-
 │   │   │   └── tollService.js
-
+│   │   │
 │   │   ├── socket/
-
 │   │   │   └── socketHandler.js
-
+│   │   │
 │   │   └── utils/
-
+│   │
 │   └── .env
-
+│
 └── frontend/
+    ├── app/
+    │   ├── (auth)/
+    │   └── dashboard/
+    │       ├── admin/
+    │       ├── operator/
+    │       └── user/
+    │
+    ├── components/
+    │   ├── layout/
+    │   ├── dashboard/
+    │   └── ui/
+    │
+    └── lib/
+        ├── api/
+        ├── hooks/
+        ├── store/
+        └── validations/
+```
 
-├── app/
+## Backend Structure
 
-│   ├── (auth)/
+| Folder/File | Description |
+|------------|-------------|
+| `server.js` | Application entry point |
+| `src/app.js` | Express application configuration |
+| `config/db.js` | Database connection setup |
+| `controllers/` | Business logic and request handlers |
+| `models/` | Database schemas and models |
+| `routes/` | API route definitions |
+| `middleware/` | Authentication and custom middleware |
+| `services/` | Reusable business services |
+| `socket/` | Socket.IO configuration and handlers |
+| `utils/` | Utility/helper functions |
+| `.env` | Environment variables |
 
-│   └── dashboard/
+## Frontend Structure
 
-│       ├── admin/
-
-│       ├── operator/
-
-│       └── user/
-
-├── components/
-
-│   ├── layout/
-
-│   ├── dashboard/
-
-│   └── ui/
-
-└── lib/
-
-├── api/
-
-├── hooks/
-
-├── store/
-
-└── validations/
+| Folder | Description |
+|----------|-------------|
+| `app/(auth)` | Authentication pages (Login, Register, Forgot Password, etc.) |
+| `app/dashboard/admin` | Admin dashboard pages |
+| `app/dashboard/operator` | Operator dashboard pages |
+| `app/dashboard/user` | User dashboard pages |
+| `components/layout` | Shared layout components |
+| `components/dashboard` | Dashboard-specific UI components |
+| `components/ui` | Reusable UI components |
+| `lib/api` | API client and service functions |
+| `lib/hooks` | Custom React hooks |
+| `lib/store` | State management |
+| `lib/validations` | Form validation schemas |
 
 ---
 
