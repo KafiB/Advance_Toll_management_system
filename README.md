@@ -258,3 +258,71 @@ npm run dev
 Visit `http://localhost:3000`
 
 Default admin credentials:
+
+Email:    admin@tollsystem.com
+
+Password: Admin@123456
+
+
+---
+
+## 🔑 API Routes
+
+| Module | Base Route |
+|---|---|
+| Auth | `/api/v1/auth` |
+| Vehicles | `/api/v1/vehicles` |
+| Accounts | `/api/v1/accounts` |
+| Booths | `/api/v1/booths` |
+| Transactions | `/api/v1/transactions` |
+| Blacklist | `/api/v1/blacklist` |
+| Reports | `/api/v1/reports` |
+| Messages | `/api/v1/messages` |
+
+---
+
+## 👥 Role Permissions
+
+| Feature | Admin | Operator | User |
+|---|---|---|---|
+| View all users | ✅ | ❌ | ❌ |
+| Manage booths | ✅ | ❌ | ❌ |
+| Process toll | ✅ | ✅ | ❌ |
+| Register vehicle | ✅ | ❌ | ✅ |
+| View own transactions | ✅ | ✅ | ✅ |
+| Manage blacklist | ✅ | ❌ | ❌ |
+| View reports | ✅ | ❌ | ❌ |
+| Top up wallet | ✅ | ❌ | ✅ |
+| Chat with all roles | ✅ | ✅ | ✅ |
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] WebRTC voice and video calling between roles
+- [ ] Mobile app (React Native)
+- [ ] RFID hardware integration
+- [ ] Advanced reporting with PDF export
+- [ ] Multi-language support
+- [ ] Stripe payment gateway integration
+- [ ] Camera-based license plate recognition (ANPR)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ by **Kafi Anam**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
